@@ -35,6 +35,7 @@ namespace Unity.FPS.UI
 
         void Start()
         {
+            return;
             m_PlayerInputsHandler = FindObjectOfType<PlayerInputHandler>();
             DebugUtility.HandleErrorIfNullFindObject<PlayerInputHandler, InGameMenuManager>(m_PlayerInputsHandler,
                 this);
@@ -62,6 +63,7 @@ namespace Unity.FPS.UI
 
         void Update()
         {
+            return;
             // Lock cursor when clicking outside of menu
             if (!MenuRoot.activeSelf && Input.GetMouseButtonDown(0))
             {

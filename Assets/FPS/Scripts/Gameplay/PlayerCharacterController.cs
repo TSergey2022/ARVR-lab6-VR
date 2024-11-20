@@ -184,7 +184,7 @@ namespace Unity.FPS.Gameplay
             GroundCheck();
 
             // landing
-            if (IsGrounded && !wasGrounded)
+            if (false && IsGrounded && !wasGrounded)
             {
                 // Fall damage
                 float fallSpeed = -Mathf.Min(CharacterVelocity.y, m_LatestImpactSpeed.y);
@@ -206,14 +206,14 @@ namespace Unity.FPS.Gameplay
             }
 
             // crouching
-            if (m_InputHandler.GetCrouchInputDown())
+            if (false && m_InputHandler.GetCrouchInputDown())
             {
                 SetCrouchingState(!IsCrouching, false);
             }
 
-            UpdateCharacterHeight(false);
+            // UpdateCharacterHeight(false);
 
-            HandleCharacterMovement();
+            // HandleCharacterMovement();
         }
 
         void OnDie()

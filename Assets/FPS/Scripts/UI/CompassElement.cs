@@ -15,6 +15,7 @@ namespace Unity.FPS.UI
 
         void Awake()
         {
+            return;
             m_Compass = FindObjectOfType<Compass>();
             DebugUtility.HandleErrorIfNullFindObject<Compass, CompassElement>(m_Compass, this);
 
@@ -26,7 +27,7 @@ namespace Unity.FPS.UI
 
         void OnDestroy()
         {
-            m_Compass.UnregisterCompassElement(transform);
+            // m_Compass.UnregisterCompassElement(transform);
         }
     }
 }
